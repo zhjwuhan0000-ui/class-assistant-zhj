@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Video Course Agent",
+    "description": "Detects Bilibili video courses in the foreground window, classifies them by subject, and summarizes the description, subtitles, danmaku and comments into Word knowledge notes."
+  }
+}

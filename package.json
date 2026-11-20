@@ -1,0 +1,35 @@
+{
+  "name": "dsh-video-course-agent",
+  "version": "1.0.0",
+  "description": "视频课程知识地图 Agent：实时检测前台窗口的 B 站视频课程，按学科分类，抓取简介/字幕/弹幕/评论做知识总结，输出 Word 学习手册",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "scripts",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "video",
+    "bilibili",
+    "knowledge-map",
+    "course"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
